@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <link rel="stylesheet" href="styles.css">
+
+<head>
+  <link href="styles.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <h1 id="title">Survey</h1>
+  <p id="description">
+    Clear form with a vague goal.
+  </p>
+</head>
+
+<body>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name: <input type="text" id="name" placeholder="Name" value="Name"  required class="text"></input></label>
+    <label id="email-label" for="email">Email: <input type="email" id="email" placeholder="Email" value="Email" required class="text"></input></label>
+    <label id="number-label" for="number">Number: <input
+    type="number" id="number" placeholder="Number" value="Number" pattern="[+0-9]" class="text" required min=8 max=12></input></label>
+    <label id="location-label" for="location">Location: </label>
+    <h2>
+    <select id="dropdown">
+      <option>Lithuania</option>
+      <option>Other</option>
+    </select>
+    <h2/>
+    <label>Has opinion? plz share:</label>
+    <textarea>
+    </textarea>
+    <h3>
+    <h2>
+    <label>Are you happy?
+    </label>
+    <div>
+    </div>
+    <input type="radio" class="inline" name="pick" value="1"><label> Taip</label></input>
+    <div></div>
+    <input type="radio" class="inline" name="pick" value="2"><label> Yes</label></input>
+    <h2/>
+    <input type="checkbox" class="inline" name="pick" value="1"><label> I agree with rules.</label></input>
+    <div></div>
+    <input type="checkbox" class="inline" name="pick" value="2"><label> I agree with recieving spam.</label></input>
+    </h3>
+    <button type="submit" value="Submit" id="submit">Submit</button>
+  </form>
+</body>
+
+</html>
