@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="styles.css" />
-
   <head>
     <link href="styles.css" rel="stylesheet" />
     <meta charset="utf-8" />
@@ -10,94 +8,96 @@
   </head>
 
   <body>
-    <h1 id="title">Survey</h1>
-    <p id="description">Clear form with a vague goal.</p>
-    <form id="survey-form">
-      <label id="name-label" for="name"
-        >Name:
-        <input
-          type="text"
-          id="name"
-          placeholder="Name"
-          value="Name"
-          required
-          class="text"
-      /></label>
-      <label id="email-label" for="email"
-        >Email:
-        <input
-          type="email"
-          id="email"
-          placeholder="Email"
-          value="Email"
-          required
-          class="text"
-      /></label>
-      <label id="number-label" for="number"
-        >Number:
-        <input
-          type="number"
-          id="number"
-          placeholder="Number"
-          value="Number"
-          pattern="[+0-9]"
-          class="text"
-          required
-          min="8"
-          max="12"
-      /></label>
-      <label id="location-label" for="dropdown">Location: </label>
-      <select id="dropdown">
-        <option>Lithuania</option>
-        <option>Other</option>
-      </select>
-      <div class="section-devider"></div>
-      <label for="textarea">Has opinion? plz share:</label>
-      <textarea id="textarea"> </textarea>
-      <div class="section-devider"></div>
-      <label for="radio">Are you happy?</label>
-      <div class="box-holder">
-        <label for="radio">
-          <input type="radio" class="inline" name="pick" value="1" id="radio" />
-          Taip</label
-        >
-        <label for="radio"
-          ><input
-            type="radio"
-            class="inline"
-            name="pick"
-            value="2"
-            id="radio"
-          />
-          Yes</label
-        >
-      </div>
-      <div class="section-devider"></div>
-      <label for="checkbox">Rules</label>
-      <div class="box-holder">
-        <label for="checkbox"
-          ><input
-            type="checkbox"
-            class="inline"
-            name="pick"
-            value="1"
-            id="checkbox"
-          />
-          I agree with rules.</label
-        >
-        <label for="checkbox"
-          ><input
-            type="checkbox"
-            class="inline"
-            name="pick"
-            value="2"
-            id="checkbox"
-          />
-          I agree with recieving spam.</label
-        >
-      </div>
-      <div class="section-devider"></div>
-      <button type="submit" value="Submit" id="submit">Submit</button>
-    </form>
+    <header>
+      <h1 id="title">Survey</h1>
+      <p id="description">Clear form with a vague goal.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label"
+          >Name:
+          <input type="text" id="name" placeholder="Name" required class="text"
+        /></label>
+        <label id="email-label"
+          >Email:
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+            class="text"
+        /></label>
+        <label id="number-label"
+          >Number:
+          <input
+            type="number"
+            id="number"
+            placeholder="Number"
+            pattern="[+0-9]"
+            class="text"
+            required
+            min="8"
+            max="12"
+        /></label>
+        <label id="location-label" for="dropdown">Location: </label>
+        <select id="dropdown">
+          <option>Lithuania</option>
+          <option>Other</option>
+        </select>
+        <div class="section-divider"></div>
+        <label for="textarea">Has opinion? plz share:</label>
+        <textarea id="textarea"> </textarea>
+        <div class="section-divider"></div>
+        <label for="radio">Are you happy?</label>
+        <div class="box-holder">
+          <label for="radio">
+            <input
+              type="radio"
+              class="inline"
+              name="pick"
+              value="1"
+              id="radio"
+            />
+            Taip</label
+          >
+          <label for="radio"
+            ><input
+              type="radio"
+              class="inline"
+              name="pick"
+              value="2"
+              id="radio"
+            />
+            Yes</label
+          >
+        </div>
+        <div class="section-divider"></div>
+        <label for="checkbox">Rules</label>
+        <div class="box-holder">
+          <label for="checkbox"
+            ><input
+              type="checkbox"
+              class="inline"
+              name="pick"
+              value="1"
+              id="checkbox"
+            />
+            I agree with rules.</label
+          >
+          <label for="checkbox"
+            ><input
+              type="checkbox"
+              class="inline"
+              name="pick"
+              value="2"
+              id="checkbox"
+            />
+            I agree with recieving spam.</label
+          >
+        </div>
+        <div class="section-divider"></div>
+        <button type="submit" value="Submit" id="submit">Submit</button>
+      </form>
+    </main>
   </body>
 </html>
